@@ -10,6 +10,8 @@ export const CustomHook = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [open, setOpen] = useState(false);
   const viewportSize = ViewportListener();
+  const linkOfCode =
+    "https://github.com/GuilhermeAgostin/Unlock-Advanced-React/tree/development/unlock-advanced-react/src/pages/CustomHook";
 
   return (
     <div className="main-custom-hook">
@@ -52,6 +54,12 @@ export const CustomHook = () => {
         >
           NO DATA RELATED TO ANY USER'S LOCATION IS STORED!
         </div>
+        <br />
+        Link of the code used on this page in GitHub:&nbsp;
+        <a href={linkOfCode} style={{ textDecoration: "underline" }}>
+          Custom Hook
+        </a>
+        <br />
       </Helper>
 
       <div className="world" onTouchEnd={() => setMenuOpen(false)}>
@@ -92,6 +100,12 @@ export const CustomHook = () => {
         >
           NO DATA RELATED TO ANY USER'S LOCATION IS STORED!
         </div>
+        <br />
+        Link of the code used on this page in GitHub:&nbsp;
+        <a href={linkOfCode} style={{ textDecoration: "underline" }}>
+          Custom Hook
+        </a>
+        <br />
       </Helper>
 
       <FloatingButton></FloatingButton>

@@ -9,6 +9,8 @@ export const RevisingHooks = () => {
   const [open, setOpen] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const viewportSize = ViewportListener();
+  const linkOfCode =
+    "https://github.com/GuilhermeAgostin/Unlock-Advanced-React/tree/development/unlock-advanced-react/src/pages/RevisingHooks";
 
   function Mount() {
     window.scrollTo(0, 0);
@@ -110,7 +112,11 @@ export const RevisingHooks = () => {
         screen with another color.
         <br />
         <br />
-        *LINK OF CODE USED ON THIS PAGE*
+        Link of the code used on this page in GitHub:&nbsp;
+        <a href={linkOfCode} style={{ textDecoration: "underline" }}>
+          Revising Hooks
+        </a>
+        <br />
       </Helper>
 
       <Counter
@@ -198,7 +204,11 @@ export const RevisingHooks = () => {
         screen with another color.
         <br />
         <br />
-        *LINK OF CODE USED ON THIS PAGE*
+        Link of the code used on this page in GitHub:&nbsp;
+        <a href={linkOfCode} style={{ textDecoration: "underline" }}>
+          Revising Hooks
+        </a>
+        <br />
       </Helper>
 
       <FloatingButton></FloatingButton>

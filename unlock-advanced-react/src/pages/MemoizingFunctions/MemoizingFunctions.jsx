@@ -16,6 +16,8 @@ export const MemoizingFunctions = () => {
   const [loading, setLoading] = useState(true);
   const [numberOfPokémon, setNumberOfPokémon] = useState(300);
   const [pokemonListValue, setPokemonListValue] = useState([]);
+  const linkOfCode =
+    "https://github.com/GuilhermeAgostin/Unlock-Advanced-React/tree/development/unlock-advanced-react/src/pages/MemoizingFunctions";
 
   function Mount() {
     scrollToTop();
@@ -167,7 +169,12 @@ export const MemoizingFunctions = () => {
         unnecessary re-renders are avoided.
         <br />
         <br />
-        *LINK OF CODE USED ON THIS PAGE*
+        <br />
+        Link of the code used on this page in GitHub:&nbsp;
+        <a href={linkOfCode} style={{ textDecoration: "underline" }}>
+          Memoizing Functions
+        </a>
+        <br />
       </Helper>
 
       <div
@@ -213,7 +220,7 @@ export const MemoizingFunctions = () => {
               opacity: showExplainer ? 1 : 0,
               color: "#ffffff",
               marginTop:
-              viewportSize?.orientation === "portrait" ? "2vh" : "auto",
+                viewportSize?.orientation === "portrait" ? "2vh" : "auto",
             }}
           >
             Test useCallback() by clicking the button to see the function for
@@ -351,7 +358,11 @@ export const MemoizingFunctions = () => {
         unnecessary re-renders are avoided.
         <br />
         <br />
-        *LINK OF CODE USED ON THIS PAGE*
+        Link of the code used on this page in GitHub:&nbsp;
+        <a href={linkOfCode} style={{ textDecoration: "underline" }}>
+          Memoizing Functions
+        </a>
+        <br />
       </Helper>
 
       <Button

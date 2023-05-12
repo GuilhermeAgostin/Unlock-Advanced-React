@@ -9,6 +9,8 @@ export const ReactContext = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [open, setOpen] = useState(false);
   const viewportSize = ViewportListener();
+  const linkOfCode =
+    "https://github.com/GuilhermeAgostin/Unlock-Advanced-React/tree/development/unlock-advanced-react/src/pages/ReactContext";
 
   function Mount() {
     window.scrollTo(0, 0);
@@ -250,7 +252,11 @@ export const ReactContext = () => {
           </code>
         </div>
         <br />
-        *LINK OF CODE USED ON THIS PAGE*
+        Link of the code used on this page in GitHub:&nbsp;
+        <a href={linkOfCode} style={{ textDecoration: "underline" }}>
+          React Context
+        </a>
+        <br />
       </Helper>
 
       <Pokedex />
@@ -472,7 +478,11 @@ export const ReactContext = () => {
           </code>
         </div>
         <br />
-        *LINK OF CODE USED ON THIS PAGE*
+        Link of the code used on this page in GitHub:&nbsp;
+        <a href={linkOfCode} style={{ textDecoration: "underline" }}>
+          React Context
+        </a>
+        <br />
       </Helper>
 
       <FloatingButton></FloatingButton>

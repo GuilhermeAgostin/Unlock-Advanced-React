@@ -10,8 +10,9 @@ export const MemoizingComponents = () => {
   const [showExplainer, setShowExplainer] = useState(true);
   const [menuOpen, setMenuOpen] = useState(false);
   const [open, setOpen] = useState(false);
-
   const viewportSize = ViewportListener();
+  const linkOfCode =
+    "https://github.com/GuilhermeAgostin/Unlock-Advanced-React/tree/development/unlock-advanced-react/src/pages/MemoizingComponents";
 
   function Mount() {
     scrollToTop();
@@ -148,8 +149,11 @@ export const MemoizingComponents = () => {
         the component passed to it will only be re-rendered if its properties
         have changed, avoiding unnecessary re-renders.
         <br />
+        Link of the code used on this page in GitHub:&nbsp;
+        <a href={linkOfCode} style={{ textDecoration: "underline" }}>
+          Memoizing Components
+        </a>
         <br />
-        *LINK OF CODE USED ON THIS PAGE*
       </Helper>
 
       <div
@@ -308,7 +312,12 @@ export const MemoizingComponents = () => {
         have changed, avoiding unnecessary re-renders.
         <br />
         <br />
-        *LINK OF CODE USED ON THIS PAGE*
+        <br />
+        Link of the code used on this page in GitHub:&nbsp;
+        <a href={linkOfCode} style={{ textDecoration: "underline" }}>
+          Memoizing Components
+        </a>
+        <br />
       </Helper>
 
       <FloatingButton></FloatingButton>

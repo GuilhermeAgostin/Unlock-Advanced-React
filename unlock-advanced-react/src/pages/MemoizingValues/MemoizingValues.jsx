@@ -12,6 +12,8 @@ const MemoizingValues = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [open, setOpen] = useState(false);
   const viewportSize = ViewportListener();
+  const linkOfCode =
+    "https://github.com/GuilhermeAgostin/Unlock-Advanced-React/tree/development/unlock-advanced-react/src/pages/MemoizingValues";
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -141,7 +143,11 @@ const MemoizingValues = () => {
           </li>
         </ul>
         <br />
-        *LINK OF CODE USED ON THIS PAGE*
+        Link of the code used on this page in GitHub:&nbsp;
+        <a href={linkOfCode} style={{ textDecoration: "underline" }}>
+          Memoizing Values
+        </a>
+        <br />
       </Helper>
 
       <section
@@ -518,7 +524,11 @@ const MemoizingValues = () => {
           </li>
         </ul>
         <br />
-        *LINK OF CODE USED ON THIS PAGE*
+        Link of the code used on this page in GitHub:&nbsp;
+        <a href={linkOfCode} style={{ textDecoration: "underline" }}>
+          Memoizing Values
+        </a>
+        <br />
       </Helper>
 
       <FloatingButton></FloatingButton>

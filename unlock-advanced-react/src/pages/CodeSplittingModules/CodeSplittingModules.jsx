@@ -36,6 +36,8 @@ const CodeSplittingModules = () => {
   const [open, setOpen] = useState(false);
 
   const elem = useRef("");
+  const linkOfCode =
+    "https://github.com/GuilhermeAgostin/Unlock-Advanced-React/tree/development/unlock-advanced-react/src/pages/CodeSplittingModules";
 
   const MenuList = [
     {
@@ -445,7 +447,10 @@ const CodeSplittingModules = () => {
                 navigate to the Code Splitting screen that uses this component.
                 <br />
                 <br />
-                *LINK OF CODE USED ON THIS PAGE*
+                Link of the code used on this page in GitHub:&nbsp;
+                <a href={linkOfCode} style={{ textDecoration: "underline" }}>
+                  Code Splitting
+                </a>
               </h5>
             </div>
           </section>

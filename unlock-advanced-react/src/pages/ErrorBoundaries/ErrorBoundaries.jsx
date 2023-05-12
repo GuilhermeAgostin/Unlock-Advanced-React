@@ -90,6 +90,8 @@ export const ErrorBoundaries = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [open, setOpen] = useState(false);
   const viewportSize = ViewportListener();
+  const linkOfCode =
+    "https://github.com/GuilhermeAgostin/Unlock-Advanced-React/tree/development/unlock-advanced-react/src/pages/ErrorBoundaries";
 
   function Mount() {
     scrollToTop();
@@ -243,7 +245,12 @@ export const ErrorBoundaries = () => {
         the error boundary itself (rather than its children).
         <br />
         <br />
-        *LINK OF CODE USED ON THIS PAGE*
+        <br />
+        Link of the code used on this page in GitHub:&nbsp;
+        <a href={linkOfCode} style={{ textDecoration: "underline" }}>
+          Error Boundaries
+        </a>
+        <br />
       </Helper>
 
       <div className="container">
@@ -383,7 +390,11 @@ export const ErrorBoundaries = () => {
         the error boundary itself (rather than its children).
         <br />
         <br />
-        *LINK OF CODE USED ON THIS PAGE*
+        Link of the code used on this page in GitHub:&nbsp;
+        <a href={linkOfCode} style={{ textDecoration: "underline" }}>
+          Error Boundaries
+        </a>
+        <br />
       </Helper>
 
       <FloatingButton></FloatingButton>
