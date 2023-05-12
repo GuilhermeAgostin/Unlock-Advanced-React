@@ -199,7 +199,11 @@ export const MemoizingComponents = () => {
         </div>
 
         {viewportSize && viewportSize === "Desktop" ? (
-          <br />
+           <>
+           <br />
+           <br />
+           <br />
+         </>
         ) : viewportSize?.orientation === "landscape" ? (
           <>
             <br />
@@ -209,8 +213,6 @@ export const MemoizingComponents = () => {
         ) : (
           <br />
         )}
-
-        {viewportSize && viewportSize === "Desktop" ? <br /> : null}
 
         <HeavyComponent></HeavyComponent>
         <br />
