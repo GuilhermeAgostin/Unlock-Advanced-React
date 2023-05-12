@@ -1,0 +1,96 @@
+.to-do-list {
+  position: absolute;
+  width: 12vw;
+  height: 20vh;
+  bottom: 22vh;
+  right: -3vw;
+}
+
+.first-check {
+  fill: transparent;
+  stroke: #ff605b;
+  stroke-width: 2%;
+  stroke-dasharray: 210;
+  stroke-dashoffset: 210;
+  animation: animate 100ms ease forwards;
+  animation-delay: 300ms;
+}
+
+.second-check {
+  fill: transparent;
+  stroke: #ff605b;
+  stroke-width: 2%;
+  stroke-dasharray: 210;
+  stroke-dashoffset: 210;
+  animation: animate 100ms ease forwards;
+  animation-delay: 700ms;
+}
+
+.third-check {
+  fill: transparent;
+  stroke: #ff605b;
+  stroke-width: 2%;
+  stroke-dasharray: 210;
+  stroke-dashoffset: 210;
+  animation: animate 100ms ease forwards;
+  animation-delay: 1s;
+}
+
+@keyframes animate {
+  to {
+    stroke-dashoffset: 300;
+  }
+}
+
+.first-note {
+  fill: transparent;
+  stroke: #1d1d3d;
+  stroke-width: 1%;
+  stroke-dasharray: 250;
+  stroke-dashoffset: 250;
+  animation: note-animate 100ms ease forwards;
+}
+
+.second-note {
+  fill: transparent;
+  stroke: #1d1d3d;
+  stroke-width: 1%;
+  stroke-dasharray: 250;
+  stroke-dashoffset: 250;
+  animation: note-animate 100ms ease forwards;
+  animation-delay: 500ms;
+}
+
+.third-note {
+  fill: transparent;
+  stroke: #1d1d3d;
+  stroke-width: 1%;
+  stroke-dasharray: 245;
+  stroke-dashoffset: 245;
+  animation: note-animate 100ms ease forwards;
+  animation-delay: 1s;
+}
+
+@keyframes note-animate {
+  to {
+    stroke-dashoffset: 370;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+  .to-do-list {
+    width: 24vw;
+    bottom: 20vh;
+    right: -8vw;
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: 769px) and (max-width: 1023px) and (orientation: portrait) {
+  .to-do-list {
+    width: 24vw;
+    bottom: 20vh;
+    right: -8vw;
+  }
+}

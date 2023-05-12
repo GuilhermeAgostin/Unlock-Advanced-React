@@ -1,0 +1,470 @@
+.projects-container {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  min-width: 90vw;
+  flex-direction: column;
+  align-items: center;
+  background: url(../../assets/images/Desktop.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  animation: test ease 700ms forwards;
+}
+
+@keyframes test {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.projects-title-container {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  align-items: center;
+  top: 8vh;
+  left: 6vw;
+  position: absolute;
+  min-height: 10vh;
+}
+
+.projects-title {
+  font-weight: normal;
+  text-shadow: -0.5vw 0.3vw rgba(5, 5, 5, 1);
+  z-index: 1;
+  font-size: clamp(3rem, 7vw, 6rem);
+  text-align: left;
+  color: #fcfcfc !important;
+}
+
+.bubbly-button {
+  display: inline-block;
+  font-size: clamp(0.75rem, 0.8vw, 1rem);
+  min-width: 12vw;
+  -webkit-appearance: none;
+  appearance: none;
+  color: #fcfcfc;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  transition: transform ease-out 0.2s, box-shadow ease-in 0.5s;
+  box-shadow: 0 2px 2px #fcfcfc;
+  background: url(../../assets/icons/house.svg);
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-position: 1vw center;
+  text-align: center;
+  background-size: 1.6vw;
+}
+
+.bubbly-button:focus {
+  outline: 0;
+}
+
+.bubbly-button:before,
+.bubbly-button:after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 140%;
+  height: 100%;
+  left: -20%;
+  transition: all ease-in-out 1s;
+  background-repeat: no-repeat;
+}
+
+.bubbly-button:before {
+  display: none;
+  top: -75%;
+  background-image: radial-gradient(circle, #ff0081 20%, transparent 20%),
+    radial-gradient(circle, transparent 20%, #ff0081 20%, transparent 30%),
+    radial-gradient(circle, #ff8800 20%, transparent 20%),
+    radial-gradient(circle, #ffee00 20%, transparent 20%),
+    radial-gradient(circle, transparent 10%, #ff0081 15%, transparent 20%),
+    radial-gradient(circle, #9dff00 20%, transparent 20%),
+    radial-gradient(circle, transparent 10%, #00ffb3 20%, transparent 30%),
+    radial-gradient(circle, #001aff 20%, transparent 20%),
+    radial-gradient(circle, transparent 10%, #ff0000 20%, transparent 20%),
+    radial-gradient(circle, #d0ff00 20%, transparent 20%),
+    radial-gradient(circle, #40a040 20%, transparent 20%),
+    radial-gradient(circle, transparent 20%, #e918bc 20%, transparent 30%),
+    radial-gradient(circle, #e41616 20%, transparent 20%),
+    radial-gradient(circle, #06f7f7 20%, transparent 20%),
+    radial-gradient(circle, #ffffff 20%, transparent 20%);
+  background-size: 20% 20%, 18% 18%, 16% 16%, 16% 16%, 18% 18%, 12% 12%, 15% 15%,
+    12% 12%, 18% 18%, 20% 20%, 20% 20%, 20% 20%, 20% 20%, 20% 20%, 20% 20%;
+}
+
+.bubbly-button:after {
+  display: none;
+  bottom: -75%;
+  background-image: radial-gradient(circle, #ff0081 20%, transparent 20%),
+    radial-gradient(circle, transparent 20%, #ff0081 20%, transparent 30%),
+    radial-gradient(circle, #ff8800 20%, transparent 20%),
+    radial-gradient(circle, #ffee00 20%, transparent 20%),
+    radial-gradient(circle, transparent 10%, #ff0081 15%, transparent 20%),
+    radial-gradient(circle, #9dff00 20%, transparent 20%),
+    radial-gradient(circle, transparent 10%, #00ffb3 20%, transparent 30%),
+    radial-gradient(circle, #001aff 20%, transparent 20%),
+    radial-gradient(circle, transparent 10%, #ff0000 20%, transparent 20%),
+    radial-gradient(circle, #d0ff00 20%, transparent 20%),
+    radial-gradient(circle, #40a040 20%, transparent 20%),
+    radial-gradient(circle, transparent 20%, #e918bc 20%, transparent 30%),
+    radial-gradient(circle, #e41616 20%, transparent 20%),
+    radial-gradient(circle, #06f7f7 20%, transparent 20%),
+    radial-gradient(circle, #c008f8 20%, transparent 20%);
+  background-size: 20% 20%, 18% 18%, 16% 16%, 16% 16%, 18% 18%, 16% 16%, 15% 15%,
+    18% 18%, 18% 18%, 20% 20%, 20% 20%, 20% 20%, 20% 20%, 20% 20%, 20% 20%;
+}
+
+.bubbly-button:active,
+.bubbly-button:hover {
+  transform: scale(0.9);
+}
+
+.animate:before {
+  display: block;
+  animation: topBubbles ease-in-out 1s forwards;
+}
+
+.animate:after {
+  display: block;
+  animation: bottomBubbles ease-in-out 1s forwards;
+}
+
+@keyframes topBubbles {
+  0% {
+    background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%,
+      40% 90%, 60% 90%, 70% 90%, 90% 100%, 70% 100%, 60% 100%, 50% 100%,
+      30% 100%, 40% 110%;
+  }
+
+  50% {
+    background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%,
+      50% 50%, 75% 20%, 90% 30%, 100% 80%, 80% 20%, 70% 100%, 60% 10%, 40% 10%,
+      50% 10%;
+  }
+
+  100% {
+    background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%,
+      50% 40%, 65% 10%, 90% 20%, 100% 90%, 80% 20%, 70% 100%, 60% 10%, 40% 10%,
+      50% 10%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%,
+      0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
+
+@keyframes bottomBubbles {
+  0% {
+    background-position: 10% -10%, 30% 10%, 25% -10%, 70% -10%, 85% -10%,
+      30% -10%, 70% 10%, 20% -10%, 30% 10%, 55% -10%, 80% 0%, 85% -10%, 70% -10%,
+      70% 0%, 70% 0%;
+  }
+
+  50% {
+    background-position: 0% 80%, 20% 80%, 15% 60%, 60% 100%, 75% 70%, 25% 30%,
+      60% 50%, 10% 80%, 20% 80%, 50% 60%, 85% 50%, 75% 70%, 95% 60%, 105% 0%,
+      105% 0%;
+  }
+
+  100% {
+    background-position: 0% 90%, 20% 90%, 10% 60%, 60% 110%, 75% 80%, 25% 60%,
+      60% 50%, 10% 90%, 20% 90%, 45% 70%, 90% 80%, 75% 80%, 95% 70%, 110% 10%,
+      110% 10%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%,
+      0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
+
+.projects-card-title-container {
+  display: flex;
+  width: 48%;
+  justify-content: center;
+  position: absolute;
+  top: 30%;
+}
+
+.projects-card-text-container {
+  display: flex;
+  width: 60%;
+  height: 10%;
+  justify-content: center;
+  z-index: 1;
+  position: absolute;
+  font-size: clamp(0.75rem, 0.8vw, 1rem);
+  margin-top: 8%;
+  right: 6vw;
+}
+
+.projects-card {
+  display: flex;
+  background: #fcfcfc;
+  width: 26vw;
+  height: 48vh;
+  border-radius: 2vw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  transition: all 1s;
+}
+
+.projects-card:active,
+.projects-card:hover {
+  transform: scale(1.04);
+  transition: all 1s;
+}
+
+.projects-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+}
+
+.projects-card-title {
+  font-size: clamp(1rem, 1.5vw, 1.25rem);
+  font-weight: bold;
+  text-shadow: none;
+  text-align: right;
+  width: 80%;
+  color: #fcfcfc !important;
+  transition: all 200ms;
+  position: relative;
+}
+
+.projects-card-image {
+  width: 24vh;
+  z-index: 1;
+}
+
+.projects-text {
+  position: relative;
+  width: 80%;
+  text-align: right;
+  color: #fcfcfc;
+  font-weight: 300;
+  margin: 0;
+}
+
+.projects {
+  display: flex;
+  padding: 1% 2% 2% 2%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 40vh;
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  .projects-container {
+    background-size: cover !important;
+    background: url(../../assets/images/DesktopTopicsMobile.svg);
+    justify-content: center;
+  }
+
+  .projects-title {
+    font-size: clamp(3.5rem, 7vw, 6rem);
+  }
+
+  .projects-card:active,
+  .projects-card:hover {
+    transform: scale(1.04);
+  }
+
+  .projects {
+    margin-top: 22vh;
+  }
+
+  .projects-title-container {
+    display: flex;
+    width: 90%;
+    height: 10vw;
+    justify-content: space-between;
+    align-items: flex-start;
+    top: 6vh;
+  }
+
+  .projects-list {
+    display: grid;
+    flex-direction: column;
+    gap: 10vh;
+  }
+
+  .projects-card {
+    width: 76vw;
+    height: 46vh;
+    border-radius: 6vw;
+    margin-bottom: 10vh;
+    background-color: #fcfcfc;
+  }
+
+  .projects-card-title {
+    font-size: clamp(1rem, 1.5vw, 1.25rem);
+    font-weight: bold;
+    width: 90%;
+    color: #fcfcfc !important;
+    top: 16vh;
+  }
+
+  .projects-card-title-container {
+    top: -4vh;
+  }
+
+  .projects-card-text-container {
+    width: 100%;
+    right: 3vw;
+    margin-top: 0;
+  }
+
+  .bubbly-button {
+    box-shadow: none;
+    background-position: center;
+    background-size: 6vw;
+    height: 6vh;
+  }
+
+  .projects-text {
+    width: 70%;
+  }
+}
+
+/* Mobile Landscape */
+@media screen and (min-width: 360px) and (max-width: 768px) and (orientation: landscape) {
+  .projects-list {
+    flex-direction: column;
+  }
+
+  .projects-card {
+    height: 62vh !important;
+  }
+
+  .background-image {
+    object-fit: cover;
+    width: 80%;
+  }
+
+  .projects-title-container {
+    padding: 0;
+  }
+
+  .projects-title {
+    padding: 0;
+  }
+
+  .projects-card-title-container {
+    top: 15%;
+  }
+
+  .projects-card-title {
+    font-size: clamp(2vw, 3vw, 4vw) !important;
+  }
+
+  .projects-card-text-container {
+    width: 70vw !important;
+    bottom: 29vh !important;
+    margin-bottom: 0 !important;
+  }
+
+  .projects-card-image {
+    position: absolute;
+    top: -30vh;
+  }
+  .bubbly-button {
+    box-shadow: none;
+    background-position: center;
+    background-size: 4vw;
+    height: 10vh;
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+  .projects-card:active,
+  .projects-card:hover {
+    transform: scale(1.04);
+  }
+
+  .projects-list {
+    flex-direction: column;
+    gap: 8vh;
+  }
+
+  .projects-card {
+    width: 76vw;
+    height: 46vh;
+    border-radius: 6vw;
+    margin-bottom: 10vh;
+  }
+
+  .projects-card-text-container {
+    margin-bottom: 4vh;
+    margin-top: 4vh !important;
+  }
+
+  .projects-card-image {
+    position: absolute;
+    left: 4vw !important;
+  }
+
+  .bubbly-button {
+    box-shadow: none;
+    background-position: center;
+    background-size: 4vw;
+    height: 4vh;
+  }
+
+  .projects-title-container,
+  .projects-title {
+    padding: 4%;
+  }
+
+  .projects-text {
+    font-size: large;
+  }
+
+  .projects-card-title {
+    font-size: clamp(1rem, 1.5vw, 1.25rem);
+    font-weight: bold;
+    width: 80%;
+    color: #fcfcfc !important;
+    top: 16vh;
+  }
+
+  .larger-circle {
+    width: 10vw;
+    height: 10vw;
+    border-radius: 5vw;
+  }
+
+  .smaller-circle {
+    width: 3vw;
+    height: 3vw;
+    border-radius: 1.5vw;
+  }
+}
+
+/* Tablet Landscape */
+@media screen and (min-width: 769px) and (max-width: 1023px) and (orientation: landscape) {
+  .background-image {
+    object-fit: cover;
+    width: 80%;
+  }
+
+  .projects-card {
+    height: 56vh;
+    border-radius: 6vw;
+  }
+
+  .projects-text {
+    width: 60%;
+  }
+}

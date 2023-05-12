@@ -1,0 +1,258 @@
+.main-custom-hook {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  min-width: 90vw;
+  justify-content: center;
+  align-items: center;
+  background: url(../../assets/images/DesktopTopics.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  animation: test ease 700ms forwards;
+}
+
+.img {
+  position: absolute;
+  z-index: -1;
+  width: 40vw;
+  height: 30vw;
+  border-radius: 90%;
+  background-image: url(../../assets/images/map.png);
+  background-color: #128cf7;
+  background-size: cover;
+  animation: rotate linear 20s infinite;
+  background-position: 0vw;
+}
+
+@keyframes rotate {
+  100% {
+    background-position: -55.3vw;
+  }
+}
+
+.world {
+  display: flex;
+  width: 93vw;
+  height: 40vh;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button-country-display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2be58e;
+  width: 10vw;
+  max-width: 10vw;
+  height: 8vh;
+  color: #fff;
+  border-radius: 5vw;
+  border: 1px solid #fff;
+  font-weight: 600;
+}
+
+.container-country-display {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 60%;
+  height: 25%;
+}
+
+.container-country-display h2 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  position: relative;
+  top: 20%;
+}
+
+.container-country-display h5 {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  padding: 0.5vw 1vw;
+  border-radius: 1vw;
+  margin-block: 0px;
+  max-width: 20vw;
+  font-weight: 400;
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  .main-custom-hook {
+    background-size: cover !important;
+    background: url(../../assets/images/DesktopTopicsMobile.svg);
+    min-height: 100vh;
+    height: 90vh;
+  }
+
+  .next-button {
+    display: none;
+  }
+
+  .back-button {
+    display: none;
+  }
+
+  .img {
+    width: 70vw;
+    height: 60vw;
+    border-radius: 90%;
+  }
+
+  .world {
+    margin-top: 40vh;
+    margin-bottom: 10vh;
+
+  }
+
+  @keyframes rotate {
+    100% {
+      background-position: -110.5vw;
+    }
+  }
+
+  .latitude-longitude-text {
+    width: 80%;
+  }
+
+  .section {
+    bottom: 8vh;
+  }
+
+  .h1 {
+    bottom: 15vw;
+  }
+
+  .container-country-display {
+    width: 100%;
+    flex-direction: row;
+    position: relative;
+    bottom: 12vw;
+  }
+
+  .container-country-display h5 {
+    max-width: 64vw;
+    border-radius: 2vw;
+  }
+
+  .button-country-display {
+    width: 22vw;
+    max-width: 25vw;
+    height: 6vh;
+  }
+
+  .container-country-display h2 {
+    height: 100%;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    position: relative;
+    bottom: 20%;
+  }
+}
+
+/* Mobile Landscape */
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  .world {
+    margin-top: 25vh;
+  }
+
+  .next-button {
+    display: none;
+  }
+
+  .back-button {
+    display: none;
+  }
+
+  .latitude-longitude-text {
+    width: 80%;
+  }
+
+  .section {
+    bottom: 10vw;
+  }
+
+  .h1 {
+    bottom: 10vw;
+  }
+
+  .container-country-display {
+    width: 100%;
+    flex-direction: row;
+    position: relative;
+    bottom: 2vh;
+  }
+
+  .container-country-display h5 {
+    padding: 0.5vw 2vw;
+    width: 100%;
+    max-width: 70vw;
+    border-radius: 2vw;
+  }
+
+  .button-country-display {
+    width: 14vw;
+    max-width: 14vw;
+    height: 10vh;
+    font-size: 0.7rem;
+  }
+
+  .container-country-display h2 {
+    height: 100%;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    position: relative;
+    bottom: 20%;
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: 769px) and (max-width: 1024px) and (orientation: portrait) {
+ .main-custom-hook{
+  flex-direction: column;
+
+ }
+ .world{
+  height: 55vh;
+  margin-bottom: -8vh;
+  margin-top: 4vh;
+}
+
+.img {
+  width: 70vw;
+  height: 60vw;
+  border-radius: 90%;
+}
+
+.container-country-display {
+  width: 100%;
+  flex-direction: row;
+}
+
+.container-country-display h5{
+  max-width: 60vw;
+
+}
+.button-country-display {
+  width: 22vw;
+  max-width: 25vw;
+  height: 6vh;
+}
+}
+
+/* Tablet Landscape */
+@media screen and (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
+ .world{
+  height: 55vh;
+  margin-bottom: 15vh;
+  margin-top: 45vh;
+}
+ 
+  .container-country-display h5{
+    max-width: 40vw;
+
+  }
+}
