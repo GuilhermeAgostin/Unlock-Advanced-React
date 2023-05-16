@@ -71,8 +71,7 @@ export const Projects = () => {
                 className="topics-card"
                 onClick={() => {
                   card.tittle === "Blank Thoughts"
-                    ? // ? (location.href = "http://localhost:5174/")
-                      (location.href =
+                    ? (location.href =
                         "https://chatlla.learnadvancedreact.com.br/")
                     : navigate(card.navigateTo);
                 }}

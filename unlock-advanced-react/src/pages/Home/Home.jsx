@@ -170,7 +170,6 @@ export const Home = () => {
                   <p className="second-landing-page-text">
                     Experience a new way to network people for free!
                   </p>
-                  {/* <a href="http://localhost:5174"> */}
                   <a href="https://chatlla.learnadvancedreact.com.br/">
                     <button id="btn-get-started">Start messaging</button>
                   </a>
@@ -271,7 +270,6 @@ export const Home = () => {
                           <button
                             id="btn-get-started-2"
                             onTouchEnd={() => {
-                              // window.location = "http://localhost:5174";
                               window.location = "https://chatlla.learnadvancedreact.com.br/";
                             }}
                           >
@@ -301,7 +299,6 @@ export const Home = () => {
                         <button
                           id="btn-get-started-2"
                           onTouchEnd={() => {
-                            // window.location = "http://localhost:5174";
                             window.location = "https://chatlla.learnadvancedreact.com.br/";
                           }}
                         >
@@ -322,7 +319,6 @@ export const Home = () => {
                       <button
                         id="btn-get-started-2"
                         onTouchEnd={() => {
-                          // window.location = "http://localhost:5174";
                           window.location = "https://chatlla.learnadvancedreact.com.br/";
                         }}
                       >
