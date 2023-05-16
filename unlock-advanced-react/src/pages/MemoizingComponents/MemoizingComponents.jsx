@@ -149,6 +149,8 @@ export const MemoizingComponents = () => {
         the component passed to it will only be re-rendered if its properties
         have changed, avoiding unnecessary re-renders.
         <br />
+        <br />
+        <br />
         Link of the code used on this page in GitHub:&nbsp;
         <a href={linkOfCode} style={{ textDecoration: "underline" }}>
           Memoizing Components
