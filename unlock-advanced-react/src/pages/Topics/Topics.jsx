@@ -58,7 +58,7 @@ export const TopicsList = [
   },
   {
     title: "Custom Hook",
-    text: "See what hemisphere you are in according to your location",
+    text: "See what country you are in according to your location",
     textAlign: "center",
     navigateTo: "create-my-own-custom-hook",
     image: Reading3,
