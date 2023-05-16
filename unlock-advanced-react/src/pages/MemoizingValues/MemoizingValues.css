@@ -1,0 +1,323 @@
+.e-container-total {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  overflow-x: hidden;
+  position: relative;
+  min-height: 65vh;
+}
+
+.e-container {
+  padding: 2rem 2rem 0.5rem 2rem;
+  background-color: #380b38;
+  border: 1px solid goldenrod;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  max-width: 100%;
+  background-image: url(../../assets/images/zodiacImages/zodiac-background-image.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 20vh;
+  transition: height 200ms;
+  overflow-y: hidden;
+}
+
+.e-button {
+  background-color: rgb(57, 63, 72);
+  color: rgb(255, 255, 255);
+  min-height: 6vh;
+  max-width: 210px;
+  min-width: 200px;
+  font-size: 14px;
+  border: 1px solid #fff;
+}
+
+.signs-characteristics-container {
+  opacity: 0;
+  animation: open-characteristics ease 400ms forwards;
+}
+
+@keyframes open-characteristics {
+  100% {
+    opacity: 1;
+  }
+}
+
+.zodiac-calculator-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  height: 4vw;
+}
+
+.zodiac-calculator-header h2 {
+  margin: 0;
+  margin-bottom: 0.5rem;
+  font-size: 2.2em;
+}
+
+.date-selector {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  z-index: 1;
+}
+
+.month {
+  display: flex;
+  flex-direction: column;
+}
+
+.day {
+  display: flex;
+  flex-direction: column;
+}
+
+.zodiac-calculator-header p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.e-container form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.birth-label {
+  font-size: 12px;
+}
+
+.e-container select {
+  font-size: 16px;
+  color: #000;
+  min-width: 16vw;
+}
+
+.submit-date {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  color: #000;
+  margin: 2vh 0 0 0;
+  height: 5vh;
+  max-height: 5vh;
+  font-size: 12px;
+  min-width: 10vw;
+}
+
+.zodiacSignImage {
+  display: block;
+  margin: auto;
+  width: 10vw;
+  height: 10vw;
+}
+
+.signs-characteristics {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 0 2vh 0;
+}
+
+.signs-characteristics h5 {
+  width: 70%;
+  color: #fff;
+  border-radius: 10px;
+  background-color: #9a59ad;
+  padding: 1vw;
+}
+
+.e-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 4vw;
+}
+
+.e-explainer {
+  font-size: 14px;
+  padding: 1rem;
+  background-color: #393f48;
+  border-radius: 0.5rem;
+  transition: all 400ms;
+}
+
+.e-header p {
+  margin: 0;
+  width: 65%;
+}
+
+.memoizing-container {
+  width: 90vw;
+  display: flex;
+  width: 90vw;
+  flex-direction: column;
+  overflow-x: hidden;
+  position: relative;
+  margin-top: 26vh;
+  margin-left: 2vw;
+  min-height: 65vh;
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  .e-container {
+    min-height: 86vw;
+  }
+
+  .memoizing-container {
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    position: relative;
+    margin-top: 36vh;
+    margin-left: 0vw;
+    min-height: 65vh;
+  }
+
+  .zodiac-calculator-header {
+    flex-direction: column;
+    margin-bottom: 4vh;
+    align-items: flex-start;
+    height: 16vh;
+  }
+
+  .zodiac-calculator-header h2 {
+    line-height: 36px;
+  }
+
+  .e-container-total {
+    margin-top: 6vh;
+    margin-left: 0;
+  }
+
+  .zodiacSignImage {
+    width: 40vw;
+    height: 40vw;
+  }
+
+  .date-selector {
+    flex-direction: column;
+  }
+
+  .signs-characteristics {
+    flex-direction: column;
+  }
+
+  .signs-characteristics h5 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .submit-date {
+    margin: 4vh 0 0 0;
+  }
+
+  .e-container form {
+    min-height: 28vh;
+  }
+
+  .e-header {
+    align-items: center;
+    flex-direction: column;
+    height: 40vw;
+  }
+
+  .e-header p {
+    width: 90%;
+  }
+
+  .e-button {
+    min-width: 100%;
+  }
+}
+
+/* Mobile Landscape */
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  .memoizing-container {
+    margin-top: 20vw;
+    margin-left: 0vw;
+  }
+
+  .e-container {
+    min-height: 46vh;
+  }
+
+  .e-header {
+    height: 5vw;
+  }
+
+  .e-header p {
+    width: 58%;
+  }
+
+  .date-selector {
+    align-items: center;
+  }
+
+  .submit-date {
+    height: 6vh;
+    max-height: 6vh;
+  }
+
+  .zodiac-calculator-header {
+    flex-direction: column;
+    height: 15vh;
+  }
+
+  .zodiacSignImage {
+    width: 16vw;
+    height: 16vw;
+  }
+
+  .e-container-total {
+    margin-top: 15vw;
+    margin-left: 0;
+  }
+
+  .e-container form {
+    display: flex;
+    flex-direction: column;
+    height: 42vh;
+    justify-content: space-between;
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: 769px) and (max-width: 1024px) and (orientation: portrait) {
+  .memoizing-container {
+    margin: 1vh 0 -25vh 2vw;
+  }
+
+  .e-header {
+    align-items: center;
+    height: 7vh;
+  }
+
+  .e-container {
+    max-height: 360px;
+  }
+
+  .submit-date {
+    height: 2vh;
+  }
+}
+
+/* Tablet Landscape */
+@media screen and (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
+  .memoizing-container {
+    margin-top: 35vh;
+    margin-left: 0;
+  }
+
+  .e-header {
+    height: 10vw;
+  }
+}

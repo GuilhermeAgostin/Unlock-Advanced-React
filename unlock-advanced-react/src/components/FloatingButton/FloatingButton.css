@@ -1,0 +1,446 @@
+.menu {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 2vh;
+  right: 2vw;
+  padding: 1vw;
+  border-radius: 8vw;
+  transition: all 0.25s;
+  z-index: 5;
+  border: 4px solid white;
+  min-width: 2vw;
+  min-height: 2vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  box-shadow: none;
+}
+
+.menu:active {
+  transform: scale(1.1);
+  box-shadow: none;
+}
+
+.menu-2 {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  bottom: 2.5vh;
+  right: 2.5vw;
+  background-color: #eea47f;
+  padding: 0.75vw;
+  border-radius: 8vw;
+  min-width: 1vw;
+  min-height: 1vw;
+  border: 4px solid white;
+  transition: all 0.1s;
+  cursor: pointer;
+  z-index: 4;
+}
+
+.menu-2:active {
+  background-color: #aa7961;
+  box-shadow: none;
+}
+
+.menu-3 {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  bottom: 2.5vh;
+  right: 2.5vw;
+  background-color: #9cee7f;
+  padding: 0.75vw;
+  border-radius: 8vw;
+  min-width: 1vw;
+  min-height: 1vw;
+  border: 4px solid white;
+  transition: all 0.1s;
+  cursor: pointer;
+  z-index: 4;
+}
+
+.menu-3:active {
+  background-color: #78b462;
+  box-shadow: none;
+}
+
+@keyframes open {
+  0% {
+    transform: scale(0.5);
+  }
+
+  10% {
+    right: 2vw;
+    transform: scale(0.5);
+  }
+
+  100% {
+    right: 12.5vw;
+  }
+}
+
+@keyframes open2 {
+  0% {
+    transform: scale(0.5);
+  }
+
+  10% {
+    right: 2vw;
+    transform: scale(0.5);
+  }
+
+  100% {
+    right: 7.5vw;
+  }
+}
+
+@keyframes close {
+  0% {
+    right: 12.5vw;
+  }
+
+  10% {
+    right: 12.5vw;
+  }
+
+  100% {
+    transform: scale(0.5);
+    right: 2vw;
+  }
+}
+
+@keyframes close2 {
+  0% {
+    right: 7.5vw;
+  }
+
+  10% {
+    right: 7.5vw;
+  }
+
+  100% {
+    transform: scale(0.5);
+    right: 2vw;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  .menu {
+    padding: 4vw;
+    min-width: 4vw;
+    min-height: 4vw;
+  }
+
+  .menu-2 {
+    padding: 2vw;
+    min-width: 4vw;
+    min-height: 4vw;
+  }
+
+  .menu-3 {
+    padding: 2vw;
+    min-width: 4vw;
+    min-height: 4vw;
+  }
+
+  @keyframes open {
+    0% {
+    }
+
+    10% {
+      right: 2vw;
+    }
+
+    100% {
+      right: 36vw;
+    }
+  }
+
+  @keyframes open2 {
+    0% {
+    }
+
+    10% {
+      right: 2vw;
+    }
+
+    100% {
+      right: 20vw;
+    }
+  }
+
+  @keyframes close {
+    0% {
+      right: 36vw;
+    }
+
+    10% {
+      right: 36vw;
+    }
+
+    100% {
+      transform: scale(0.5);
+      right: 2vw;
+    }
+  }
+
+  @keyframes close2 {
+    0% {
+      right: 20vw;
+    }
+
+    10% {
+      right: 20vw;
+    }
+
+    100% {
+      transform: scale(0.5);
+      right: 2vw;
+      background-color: red !important;
+    }
+  }
+}
+
+/* Mobile Landscape */
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  .menu {
+    padding: 2vw;
+    min-width: 4vw;
+    min-height: 4vw;
+  }
+
+  .menu-2 {
+    padding: 1vw;
+    min-width: 4vw;
+    min-height: 4vw;
+  }
+
+  .menu-3 {
+    padding: 1vw;
+    min-width: 4vw;
+    min-height: 4vw;
+  }
+
+  @keyframes open {
+    0% {
+      transform: scale(0.5);
+      box-shadow: none;
+    }
+
+    10% {
+      right: 2vw;
+      transform: scale(0.5);
+      box-shadow: none;
+    }
+
+    100% {
+      right: 36vw;
+      box-shadow: none;
+    }
+  }
+
+  @keyframes open2 {
+    0% {
+      transform: scale(0.5);
+    }
+
+    10% {
+      right: 2vw;
+      transform: scale(0.5);
+    }
+
+    100% {
+      right: 20vw;
+    }
+  }
+
+  @keyframes close {
+    0% {
+      right: 36vw;
+    }
+
+    10% {
+      right: 36vw;
+    }
+
+    100% {
+      transform: scale(0.5);
+      right: 2vw;
+    }
+  }
+
+  @keyframes close2 {
+    0% {
+      right: 20vw;
+    }
+
+    10% {
+      right: 20vw;
+    }
+
+    100% {
+      transform: scale(0.5);
+      right: 2vw;
+      background-color: red !important;
+    }
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: 769px) and (max-width: 1024px) and (orientation: portrait) {
+  .menu {
+    padding: 4vw;
+    min-width: 4vw;
+    min-height: 4vw;
+  }
+
+  .menu-2 {
+    padding: 2vw;
+    min-width: 4vw;
+    min-height: 4vw;
+  }
+
+  .menu-3 {
+    padding: 2vw;
+    min-width: 4vw;
+    min-height: 4vw;
+  }
+
+  @keyframes open {
+    0% {
+    }
+
+    10% {
+      right: 2vw;
+    }
+
+    100% {
+      right: 36vw;
+    }
+  }
+
+  @keyframes open2 {
+    0% {
+    }
+
+    10% {
+      right: 2vw;
+    }
+
+    100% {
+      right: 20vw;
+    }
+  }
+
+  @keyframes close {
+    0% {
+      right: 36vw;
+    }
+
+    10% {
+      right: 36vw;
+    }
+
+    100% {
+      transform: scale(0.5);
+      right: 2vw;
+    }
+  }
+
+  @keyframes close2 {
+    0% {
+      right: 20vw;
+    }
+
+    10% {
+      right: 20vw;
+    }
+
+    100% {
+      transform: scale(0.5);
+      right: 2vw;
+      background-color: red !important;
+    }
+  }
+}
+
+/* Tablet Landscape*/
+@media screen and (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
+  .menu {
+    padding: 2vw;
+    min-width: 2vw;
+    min-height: 2vw;
+  }
+
+  .menu-2 {
+    padding: 1vw;
+    min-width: 2vw;
+    min-height: 2vw;
+  }
+
+  .menu-3 {
+    padding: 1vw;
+    min-width: 2vw;
+    min-height: 2vw;
+  }
+
+  @keyframes open {
+    0% {
+    }
+
+    10% {
+      right: 2vw;
+    }
+
+    100% {
+      right: 36vw;
+    }
+  }
+
+  @keyframes open2 {
+    0% {
+    }
+
+    10% {
+      right: 2vw;
+    }
+
+    100% {
+      right: 20vw;
+    }
+  }
+
+  @keyframes close {
+    0% {
+      right: 36vw;
+    }
+
+    10% {
+      right: 36vw;
+    }
+
+    100% {
+      transform: scale(0.5);
+      right: 2vw;
+    }
+  }
+
+  @keyframes close2 {
+    0% {
+      right: 20vw;
+    }
+
+    10% {
+      right: 20vw;
+    }
+
+    100% {
+      transform: scale(0.5);
+      right: 2vw;
+      background-color: red !important;
+    }
+  }
+}

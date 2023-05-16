@@ -1,0 +1,131 @@
+.helper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  height: 16%;
+  position: absolute;
+  top: 25vh;
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 10px;
+  border: 1px solid #ffffff;
+  max-height: 50px;
+}
+
+.helper:active {
+  border-color: #000000;
+}
+
+.helper-title {
+  font-size: 16px;
+  color: #000000;
+  cursor: pointer;
+}
+
+.emoji {
+  font-size: 24px;
+  transition: all 400ms;
+  cursor: pointer;
+}
+
+.explainers {
+  display: flex;
+  width: 70vw;
+  height: 70vh;
+  margin: 24vh 2vw 0 2vw;
+  background-color: #ffffff;
+  border-radius: 2vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.explainers-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  overflow-y: auto;
+  color: #000000;
+  margin-left: 3vw;
+  height: 88%;
+  max-height: none;
+  width: 100%;
+}
+
+.explainers-text {
+  font-weight: 300;
+  text-align: left;
+  width: 92%;
+  color: #000000;
+}
+
+.explainers-text-mobile {
+  font-weight: 300;
+  text-align: left;
+  width: 95%;
+  color: #000000;
+  margin: 0;
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  .helper {
+    top: 25vh;
+    width: 90vw;
+    height: 6%;
+    min-height: 50px;
+    max-height: 50px;
+  }
+
+  .explainers-container {
+    height: 95%;
+    width: 95%;
+  }
+
+  .explainers {
+    width: 88vw;
+    height: 70vh;
+  }
+}
+
+/* Mobile Landscape */
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  .helper {
+    height: 8%;
+    max-height: 30px;
+    width: 90%;
+  }
+
+  .explainers {
+    height: 70vh;
+    width: 92vw;
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: 769px) and (max-width: 1024px) and (orientation: portrait) {
+  .helper {
+    max-height: 30px;
+    width: 90%;
+    position: initial;
+  }
+
+  .explainers {
+    height: 70vh;
+    width: 92vw;
+  }
+}
+
+/* Tablet Landscape */
+@media screen and (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
+  .helper {
+    top: 13vw;
+    max-height: 30px;
+    width: 90%;
+  }
+
+  .explainers {
+    height: 70vh;
+    width: 92vw;
+  }
+}

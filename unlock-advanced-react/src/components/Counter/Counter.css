@@ -1,0 +1,322 @@
+:root {
+  --x: center;
+  --y: center;
+  --test2: #6c75a3;
+  --test3: #6c75a3;
+}
+
+.full-card {
+  display: flex;
+  width: 90vw;
+  flex-direction: column;
+  overflow-x: hidden;
+  position: relative;
+  margin-top: 24vh;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(18, 1fr);
+  grid-template-rows: repeat(6, 5vw);
+  background-color: #ffffff;
+  overflow-y: hidden;
+}
+
+@keyframes gradient {
+  0% {
+    background: radial-gradient(
+      circle at var(--x) var(--y),
+      var(--test2) 0%,
+      var(--test2) 0%,
+      var(--test3) 25%,
+      var(--test3) 25%
+    );
+  }
+
+  5% {
+    background: radial-gradient(
+      circle at var(--x) var(--y),
+      var(--test2) 0%,
+      var(--test2) 1%,
+      var(--test3) 30%,
+      var(--test3) 30%
+    );
+  }
+
+  10% {
+    background: radial-gradient(
+      circle at var(--x) var(--y),
+      var(--test2) 5%,
+      var(--test2) 5%,
+      var(--test3) 35%,
+      var(--test3) 35%
+    );
+  }
+
+  15% {
+    background: radial-gradient(
+      circle at var(--x) var(--y),
+      var(--test2) 7%,
+      var(--test2) 10%,
+      var(--test3) 40%,
+      var(--test3) 40%
+    );
+  }
+
+  20% {
+    background: radial-gradient(
+      circle at var(--x) var(--y),
+      var(--test2) 9%,
+      var(--test2) 15%,
+      var(--test3) 45%,
+      var(--test3) 45%
+    );
+  }
+
+  25% {
+    background: radial-gradient(
+      circle at var(--x) var(--y),
+      var(--test2) 11%,
+      var(--test2) 20%,
+      var(--test3) 50%,
+      var(--test3) 50%
+    );
+  }
+
+  30% {
+    background: radial-gradient(
+      circle at var(--x) var(--y),
+      var(--test2) 13%,
+      var(--test2) 25%,
+      var(--test3) 55%,
+      var(--test3) 55%
+    );
+  }
+
+  35% {
+    background: radial-gradient(
+      circle at var(--x) var(--y),
+      var(--test2) 15%,
+      var(--test2) 30%,
+      var(--test3) 60%,
+      var(--test3) 60%
+    );
+  }
+
+  40% {
+    background: radial-gradient(
+      circle at var(--x) var(--y),
+      var(--test2) 17%,
+      var(--test2) 35%,
+      var(--test3) 65%,
+      var(--test3) 65%
+    );
+  }
+
+  45% {
+    background: radial-gradient(
+      circle at var(--x) var(--y),
+      var(--test2) 19%,
+      var(--test2) 40%,
+      var(--test3) 70%,
+      var(--test3) 70%
+    );
+  }
+
+  50% {
+    background: radial-gradient(
+      circle at var(--x) var(--y),
+      var(--test2) 21%,
+      var(--test2) 45%,
+      var(--test3) 75%,
+      var(--test3) 75%
+    );
+  }
+
+  55% {
+    background: radial-gradient(
+      circle at var(--x) var(--y),
+      var(--test2) 54%,
+      var(--test2) 50%,
+      var(--test3) 80%,
+      var(--test3) 80%
+    );
+  }
+
+  60% {
+    background: radial-gradient(
+      circle at var(--x) var(--y),
+      var(--test2) 59%,
+      var(--test2) 55%,
+      var(--test3) 85%,
+      var(--test3) 85%
+    );
+  }
+
+  65% {
+    background: radial-gradient(
+      circle at var(--x) var(--y),
+      var(--test2) 64%,
+      var(--test2) 60%,
+      var(--test3) 90%,
+      var(--test3) 90%
+    );
+  }
+
+  70% {
+    background: radial-gradient(
+      circle at var(--x) var(--y),
+      var(--test2) 69%,
+      var(--test2) 65%,
+      var(--test3) 95%,
+      var(--test3) 95%
+    );
+  }
+
+  75% {
+    background: radial-gradient(
+      circle at var(--x) var(--y),
+      var(--test2) 74%,
+      var(--test2) 70%,
+      var(--test3) 100%,
+      var(--test3) 100%
+    );
+  }
+
+  80% {
+    background: radial-gradient(
+      circle at var(--x) var(--y),
+      var(--test2) 79%,
+      var(--test2) 75%,
+      var(--test3) 105%,
+      var(--test3) 105%
+    );
+  }
+
+  85% {
+    background: radial-gradient(
+      circle at var(--x) var(--y),
+      var(--test2) 84%,
+      var(--test2) 80%,
+      var(--test3) 110%,
+      var(--test3) 110%
+    );
+  }
+
+  90% {
+    background: radial-gradient(
+      circle at var(--x) var(--y),
+      var(--test2) 89%,
+      var(--test2) 85%,
+      var(--test3) 115%,
+      var(--test3) 115%
+    );
+  }
+
+  95% {
+    background: radial-gradient(
+      circle at var(--x) var(--y),
+      var(--test2) 94%,
+      var(--test2) 90%,
+      var(--test3) 120%,
+      var(--test3) 120%
+    );
+  }
+
+  100% {
+    background: radial-gradient(
+      circle at var(--x) var(--y),
+      var(--test2) 100%,
+      var(--test2) 100%,
+      var(--test3) 125%,
+      var(--test3) 125%
+    );
+  }
+}
+
+.box {
+  outline: 1px solid #000000;
+  max-width: 5vw;
+  max-height: 5vw;
+  cursor: pointer;
+}
+
+.click {
+  font-family: "Pacifico", cursive;
+  font-size: 60px;
+  transition: all 700ms;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+}
+
+.counter {
+  font-family: "Pacifico", cursive;
+  transition: all 700ms;
+  display: flex;
+  justify-content: center;
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  .full-card {
+    margin-top: 36vh;
+  }
+
+  .wrapper {
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(36, 4vw);
+    grid-gap: 0.5px;
+    background-color: white;
+    overflow-y: hidden;
+  }
+
+  .box {
+    outline: 1px solid black;
+  }
+
+  .click {
+    font-size: 30px;
+  }
+}
+
+/* Mobile Landscape */
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  .full-card {
+    margin-top: 38vh;
+  }
+
+  .wrapper {
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(8, 4vw);
+    grid-gap: 0.5px;
+    background-color: white;
+    overflow-y: hidden;
+  }
+
+  .box {
+    outline: 1px solid black;
+  }
+
+  .click {
+    font-size: 30px;
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: 769px) and (max-width: 1024px) and (orientation: portrait) {
+  .wrapper {
+    grid-template-rows: repeat(12, 5vw);
+  }
+
+  .full-card {
+    margin-top: 8vh;
+  }
+}
+
+/* Tablet Landscape*/
+@media screen and (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
+  .full-card {
+    margin-top: 40vh;
+  }
+}
