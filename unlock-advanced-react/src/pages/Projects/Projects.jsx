@@ -106,7 +106,7 @@ export const Projects = () => {
                     ) : (
                       <label>
                         Come enjoy a new way to connect with everyone for free
-                        with
+                        with{" "}
                         <a href="https://chatlla.learnadvancedreact.com.br/">
                           <strong
                             style={{
