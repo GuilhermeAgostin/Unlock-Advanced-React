@@ -29,7 +29,7 @@
 - <a href="#licença">Licença</a>
 
 <h2 id="sobre">📝 Sobre o Projeto</h2>
-O Unlock Advanced React é um site que desenvolvi para ajudar a quem acessá-lo, realmente desbloquear novas habilidades com essa biblioteca famosa e bem robusta que é o React.
+Unlock Advanced React é um site que desenvolvi para ajudar os usuários a desbloquearem verdadeiramente novas habilidades com a renomada e poderosa biblioteca React.
 
 <h2 id="motivo">🤔 Porque escolhi React?</h2>
 Para tomar essa decisão, levei em consideração pontos como, um foco maior na experiência do usuário, tornando a aplicação mais intuitiva e visualmente atraente,  a escalabilidade da aplicação , facilidade na construção de interfaces, reutilização de componentes e também a popularidade de uso e de mercado dessa ferramenta.
