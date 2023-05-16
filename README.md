@@ -36,6 +36,7 @@ Para tomar essa decisão, levei em consideração pontos como, um foco maior na 
 
 
 <h2 id="desbloquear">🔓 Como desbloquear essas novas habilidades?</h2>
+
 Ao acessar o site [Unlock Advanced React](https://learnadvancedreact.com.br/), você terá a oportunidade de explorar diversos tópicos e projetos que trazem benefícios significativos para suas aplicações. Nos tópicos, abordo assuntos como a criação de hooks personalizados para uma maior flexibilidade, estratégias para manter a organização da aplicação ao lidar com componentes compartilhados, técnicas de tratamento de erros para garantir uma excelente experiência do usuário, alternativas para otimizar o carregamento de telas mesmo com componentes ou funções complexas e, por fim, técnicas avançadas de divisão de código para melhorar a velocidade e o desempenho da aplicação em produção. Além disso, na seção de projetos, você encontrará o [Chatlla](https://chatlla.learnadvancedreact.com.br/), um site específico com seu próprio [repositório](https://github.com/GuilhermeAgostin/Chatlla), criado para fornecer uma experiência mais organizada e direcionada. Curioso(a) para saber quais tecnologias foram utilizadas no desenvolvimento desses sites? Continue aqui e confira.
 
 ## <h2 id="como_acessar">📁 Acesso ao Projeto</h2>
